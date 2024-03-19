@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-part">
+        <div class="logo_container">
+          <img src="odin-lined.png" alt="odin logo" id="logo_icon" />
+          <span class="logo_text">ODIN</span>
+        </div>
+        <div class="image_author">
+          Photo by <a href="">Halie West</a> on <a href="">Unsplash</a>
+        </div>
+      </div>
+      <div class="right-part">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize you deepest dreams.<br> Sign up<em></em>
+            now</em
+          >
+          to get started.
+        </p>
+        <p><br /><br />You <em>know</em> what to do.</p>
+
+        <form action="POST">
+          <div class="form-group">
+            <fieldset id="name">
+              <legend>Lets do this!</legend>
+              <div class="form-left">
+                <ul class="left-fields">
+                  <li>
+                    <ul class="field">
+                      <li><label for="First Name">First Name</label></li>
+                      <li><input type="text" id="first-name" required /></li>
+                      <li>
+                        <output
+                          for="first-name"
+                          id="first-name-output"
+                        ></output>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="field">
+                      <li><label for="email">EMAIL</label></li>
+                      <li>
+                        <input type="email" name="email" id="email" required />
+                      </li>
+                      <li><output for="email" id="email-output"></output></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="field">
+                      <li><label for="password">PASSWORD</label></li>
+                      <li>
+                        <input
+                          type="password"
+                          name="password"
+                          id="password"
+                          required
+                        />
+                      </li>
+                      <li>
+                        <output for="password" id="password-output"></output>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="form-right">
+                <ul class="right-fields">
+                  <li>
+                    <ul class="field">
+                      <li><label for="Last Name">Last Name</label></li>
+                      <li><input type="text" id="last-name" /></li>
+                      <li>
+                        <output for="last-name" id="last-name-output"></output>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="field">
+                      <li><label for="phone">Phone Number</label></li>
+                      <li><input type="tel" id="phone" required /></li>
+                      <li><output for="phone" id="phone-output"></output></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="confirm-password">
+                      <li><label for="password">Confirm Password</label></li>
+                      <li>
+                        <input
+                          type="password"
+                          name="confirm-password"
+                          id="confirm-password"
+                          required
+                        />
+                      </li>
+                      <li>
+                        <output
+                          for="confirm-password"
+                          id="confirm-password-output"
+                        ></output>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+            <button id="submit">Create Account</button>
+          </div>
+        </form>
+
+        <div>
+          <br />
+          <p>
+            Already have an account? <strong><a href="#">Log in</a></strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

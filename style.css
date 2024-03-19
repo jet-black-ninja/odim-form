@@ -1,0 +1,175 @@
+:root {
+    --marginLeft: 42px;
+    --buttonBackground: #596D48;
+    --rightPartBackground: rgb(245, 245, 245);
+}
+
+body {
+    font-family: 'Segoe Ui ', Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+
+}
+
+.left-part {
+    background-image: url("halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: 40vw 100vh;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.logo_container {
+    background-color: rgb(0, 0, 0, 0.3);
+    padding: 10px;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo_icon {
+    width: 100px;
+}
+
+.logo_text {
+    font-family: Norse;
+    font-size: 98px;
+
+}
+
+.image_author {
+    text-align: center;
+    padding: 20px;
+
+    a:link {
+        color: white;
+    }
+
+    a:visited {
+        color: white;
+    }
+}
+
+.right-part {
+    background-color: var(--rightPartBackground);
+    flex: 3;
+    margin: auto 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-group {
+    background-color: white;
+    box-shadow: 0px 5px 5px rgb(226, 226, 226);
+    padding: var(--marginLeft)
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+
+    gap: 48px;
+}
+
+.form-left,
+.form-right {
+    flex: 1;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.left-fields,
+.right-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+button {
+    padding: 15px 60px;
+    background-color: var(--buttonBackground);
+    color: white;
+    border: 0;
+    border-radius: 11px;
+    margin: 20px var(--marginLeft);
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px rgb(226, 226, 226);
+
+}
+
+button:hover {
+    cursor: pointer;
+
+}
+
+p {
+    margin: 20px var(--marginLeft);
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 400px;
+
+}
+
+input {
+    width: 350px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid rgb(198, 198, 198);
+}
+
+input:focus {
+    border: 1px solid blue;
+    box-shadow: 5px 5px 5px rgb(226, 226, 226);
+}
+
+label {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+}
+
+p:last-of-type {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+p:last-of-type>a {
+    color: var(--buttonBackground);
+    text-decoration: none;
+}
+
+#password,
+#confirm-password {
+    border: 1px solid red;
+}
+
+output {
+    color: red;
+}
